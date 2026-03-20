@@ -8,9 +8,11 @@ public class CentroControle {
     public void adicionarFoguete(Foguete f) {
         foguetes.add(f);
     }
+
     public void adicionarSatelite(Satelite s) {
         satelites.add(s);
     }
+
     public void iniciarMissao(int iFoguete, int iSatelite) {
         Foguete f = foguetes.get(iFoguete);
         Satelite s = satelites.get(iSatelite);
@@ -22,6 +24,7 @@ public class CentroControle {
             System.out.println("Falha no lançamento");
         }
     }
+
     public void statusMissao() {
         for (Foguete f : foguetes) {
             System.out.println(f);
